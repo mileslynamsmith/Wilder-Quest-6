@@ -22,7 +22,7 @@ class Wilder {
     public void setPresent(boolean present) {
         this.present = present;
     }
-    // create a whoamI()method  "My name is firstname and I am present" or "My name is firstname and I am not present", 
+    // whoamI()method  "My name is firstname and I am present" or "My name is firstname and I am not present", 
     public String whoamI() {
         return "My name is" + this.getFirstname() + " and I am " + String.valueOf(this.isPresent());
     }

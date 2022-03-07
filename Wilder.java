@@ -1,7 +1,7 @@
 class Wilder {
     // add attributes string firstname and boolean present
-    public static String firstname; // variables declared in class
-    public static boolean present; 
+    private String firstname; // variables declared in class
+    private boolean present; 
         // constructors to initialise firstname and present
     public Wilder (String firstname) {
         this.firstname = firstname;
@@ -23,8 +23,15 @@ class Wilder {
         this.present = present;
     }
     // whoamI()method  "My name is firstname and I am present" or "My name is firstname and I am not present", 
-    public String whoamI() {
-        return "My name is" + this.getFirstname() + " and I am " + String.valueOf(this.isPresent());
+    public String whoAmI() {
+        String output = "My name is " + this.getFirstname() + " and I am ";
+        if (present){
+            output += "present.";
+        }
+        else {
+            output += "not present.";
+        }
+        return output;
     }
-    
+
 }
